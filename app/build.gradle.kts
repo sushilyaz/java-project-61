@@ -1,3 +1,5 @@
+import org.gradle.internal.impldep.org.glassfish.jaxb.core.api.impl.NameConverter.Standard
+import java.io.InputStream;
 plugins {
     id("java")
     application
@@ -15,6 +17,7 @@ repositories {
 tasks.withType<JavaCompile> {
     options.release.set(20)
 }
+
 
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))

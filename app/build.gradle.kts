@@ -1,12 +1,19 @@
 plugins {
     id("java")
+    application
 }
-
+application {
+    mainClass = "hexlet.code.App"
+}
 group = "hexlet.code"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+tasks.withType<JavaCompile> {
+    options.release.set(20)
 }
 
 dependencies {

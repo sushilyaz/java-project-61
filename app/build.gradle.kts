@@ -3,6 +3,7 @@ import java.io.InputStream;
 plugins {
     id("java")
     application
+    checkstyle
 }
 application {
     mainClass = "hexlet.code.App"
@@ -22,6 +23,7 @@ tasks.withType<JavaCompile> {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation("com.puppycrawl.tools:checkstyle:10.12.4")
 }
 
 tasks.test {

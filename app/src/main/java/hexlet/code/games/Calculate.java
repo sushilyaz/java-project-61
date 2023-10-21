@@ -19,7 +19,7 @@ public class Calculate {
             num1 = Randomize.generateNum(1, 1000);
             num2 = Randomize.generateNum(1, 1000);
             index = Randomize.generateNum(0, 2);
-            expression = String.valueOf(num1 + arrayOperations[index] + num2);
+            expression = String.valueOf(num1 + " " + arrayOperations[index] + " " + num2);
             Engine.generateQuastion(expression);
             switch (arrayOperations[index]) {
                 case "+": {

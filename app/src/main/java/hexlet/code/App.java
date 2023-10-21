@@ -13,6 +13,7 @@ public class App {
                 3 - Calculate
                 4 - gcd
                 5 - Progress
+                6 - Prime
                 0 - Exit
                 Your choice:\s""");
         Scanner scanner = new Scanner(System.in);
@@ -37,6 +38,10 @@ public class App {
             }
             case "5": {
                 Progress.gameProgress();
+                return;
+            }
+            case "6": {
+                Prime.gamePrime();
                 return;
             }
         }

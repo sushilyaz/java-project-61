@@ -1,9 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.Calculate;
-import hexlet.code.games.Cli;
-import hexlet.code.games.Even;
-import hexlet.code.games.gcd;
+import hexlet.code.games.*;
 
 import java.util.Scanner;
 
@@ -15,6 +12,7 @@ public class App {
                 2 - Even
                 3 - Calculate
                 4 - gcd
+                5 - Progress
                 0 - Exit
                 Your choice:\s""");
         Scanner scanner = new Scanner(System.in);
@@ -35,6 +33,10 @@ public class App {
             }
             case "4": {
                 gcd.ncdGame();
+                return;
+            }
+            case "5": {
+                Progress.gameProgress();
                 return;
             }
         }

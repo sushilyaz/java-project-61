@@ -6,7 +6,7 @@ public class Progress {
     public static void gameProgress() {
         String name = Cli.greeting();
         System.out.println("""
-                Find the greatest common divisor of given numbers.""");
+                What number is missing in the progression?""");
         int lengthProgress = 0;
         String expression = "";
         String actually = "";

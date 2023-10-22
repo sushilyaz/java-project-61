@@ -18,8 +18,8 @@ public class Calculate {
         String actually = "";
         String except = "";
         for (int i = 0; i < Const.COUNT_OF_QUESTION; i++) {
-            num1 = Randomize.generateNum(1, 1000);
-            num2 = Randomize.generateNum(1, 1000);
+            num1 = Randomize.generateNum(1, Const.MAX_SIDE_INDEX);
+            num2 = Randomize.generateNum(1, Const.MAX_SIDE_INDEX);
             index = Randomize.generateNum(0, 2);
             expression = String.valueOf(num1 + " " + arrayOperations[index] + " " + num2);
             Engine.generateQuastion(expression);

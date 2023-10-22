@@ -7,6 +7,4 @@ public class Const {
     public static final int MIN_SIDE_INDEX = 0;
     public static final int MAX_SIDE_INDEX = 1000;
     public static final int MAX_SIDE_LENGTH_PROGRESS = 100;
-
-
 }

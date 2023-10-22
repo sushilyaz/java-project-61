@@ -42,7 +42,7 @@ public class Progress {
         int[] randomSeq = new int[count];
         int d = 0;
         randomSeq[0] = Randomize.generateNum(Const.MIN_SIDE_INDEX, Const.MAX_SIDE_LENGTH_PROGRESS);
-        d = Randomize.generateNum(minSideLengthOfD, maxSideLengthOfD);
+        d = Randomize.generateNum(1, Const.MAX_SIDE_LENGTH);
         for (int i = 1; i < randomSeq.length; i++) {
             randomSeq[i] = randomSeq[0] + d * (i);
         }

@@ -3,7 +3,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Randomize;
 
-public class gcd {
+public class Gcd {
     public static void ncdGame() {
         String name = Cli.greeting();
         System.out.println("""

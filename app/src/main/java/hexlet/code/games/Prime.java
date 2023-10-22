@@ -22,8 +22,11 @@ public class Prime {
             Engine.generateQuastion(expression);
             BigInteger bigInteger = BigInteger.valueOf((Integer) num);
             probablePrime = bigInteger.isProbablePrime((int) Math.log((Integer) num));
-            if (probablePrime) except = "yes";
-            else except = "no";
+            if (probablePrime) {
+                except = "yes";
+            } else {
+                except = "no";
+            }
             actually = Engine.userAnswer();
             check = Engine.checkAnswer(except, actually);
             Engine.result(check, except, actually, name);

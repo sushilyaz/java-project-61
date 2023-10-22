@@ -22,19 +22,12 @@ public class Calculate {
             index = Randomize.generateNum(0, 2);
             expression = String.valueOf(num1 + " " + arrayOperations[index] + " " + num2);
             Engine.generateQuastion(expression);
-            switch (arrayOperations[index]) {
-                case "+": {
-                    except = String.valueOf(num1 + num2);
-                    break;
-                }
-                case "*": {
-                    except = String.valueOf(num1 * num2);
-                    break;
-                }
-                case "-": {
-                    except = String.valueOf(num1 - num2);
-                    break;
-                }
+            if (arrayOperations[index].equals("+")) {
+                except = String.valueOf(num1 + num2);
+            } else if (arrayOperations[index].equals("*")) {
+                except = String.valueOf(num1 * num2);
+            } else if (arrayOperations[index].equals("-")) {
+                except = String.valueOf(num1 - num2);
             }
             actually = Engine.userAnswer();
             check = Engine.checkAnswer(except, actually);

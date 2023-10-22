@@ -1,7 +1,5 @@
 package hexlet.code;
 
-import hexlet.code.Randomize;
-
 import java.util.Scanner;
 
 public class Engine {
@@ -13,12 +11,13 @@ public class Engine {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
-    public static boolean checkAnswer (String except, String actually) {
+    public static boolean checkAnswer(String except, String actually) {
         return actually.equals(except);
     }
-    public static void result (boolean check, String except, String actually, String name) {
-        if (check) System.out.println("Correct!");
-        else {
+    public static void result(boolean check, String except, String actually, String name) {
+        if (check) {
+            System.out.println("Correct!");
+        } else {
             System.out.println("'" + actually + "' is wrong answer ;(. Correct answer was '" + except + "'");
             System.out.println("Let's try again, " + name + "!");
             System.exit(0);

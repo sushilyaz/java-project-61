@@ -9,7 +9,7 @@ public class Even {
         System.out.println("""
                 Answer 'yes' if the number is even, otherwise answer 'no'.""");
         int num = 0;
-        String expression ="";
+        String expression = "";
         String actually = "";
         String except = "";
         boolean check;
@@ -17,8 +17,11 @@ public class Even {
             num = Randomize.generateNum(1, 1000);
             expression = String.valueOf(num);
             Engine.generateQuastion(expression);
-            if (num % 2 == 0) except = "yes";
-            else except = "no";
+            if (num % 2 == 0) {
+                except = "yes";
+            } else {
+                except = "no";
+            }
             actually = Engine.userAnswer();
             check = Engine.checkAnswer(except, actually);
             Engine.result(check, except, actually, name);

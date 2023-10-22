@@ -17,10 +17,13 @@ public class Progress {
         for (int i = 0; i < 3; i++) {
             lengthProgress = Randomize.generateNum(5, 10);
             int[] seq = generateSeq(lengthProgress);
-            index = Randomize.generateNum(0, lengthProgress-1);
+            index = Randomize.generateNum(0, lengthProgress - 1);
             for (int j = 0; j < seq.length; j++) {
-                if (j == index) expression = expression + ".." + " ";
-                else expression = expression + String.valueOf(seq[j]) + " ";
+                if (j == index) {
+                    expression = expression + ".." + " ";
+                } else {
+                    expression = expression + String.valueOf(seq[j]) + " ";
+                }
             }
             Engine.generateQuastion(expression);
             expression = "";

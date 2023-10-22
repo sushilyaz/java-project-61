@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Const;
 import hexlet.code.Engine;
 import hexlet.code.Randomize;
 
@@ -16,8 +17,8 @@ public class Prime {
         String except = "";
         boolean check;
         boolean probablePrime = true;
-        for (int i = 0; i < 3; i++) {
-            num = Randomize.generateNum(1, 100);
+        for (int i = 0; i < Const.COUNT_OF_QUESTION; i++) {
+            num = Randomize.generateNum(1, Const.MAX_SIDE_LENGTH_PROGRESS);
             expression = String.valueOf(num);
             Engine.generateQuastion(expression);
             BigInteger bigInteger = BigInteger.valueOf((Integer) num);

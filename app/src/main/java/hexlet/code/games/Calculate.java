@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Const;
 import hexlet.code.Engine;
 import hexlet.code.Randomize;
 
@@ -16,7 +17,7 @@ public class Calculate {
         String expression = "";
         String actually = "";
         String except = "";
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < Const.COUNT_OF_QUESTION; i++) {
             num1 = Randomize.generateNum(1, 1000);
             num2 = Randomize.generateNum(1, 1000);
             index = Randomize.generateNum(0, 2);

@@ -37,8 +37,6 @@ public class Progress {
     }
 
     public static int[] generateSeq(int count) {
-        int minSideLengthOfD = 1;
-        int maxSideLengthOfD = 10;
         int[] randomSeq = new int[count];
         int d = 0;
         randomSeq[0] = Randomize.generateNum(Const.MIN_SIDE_INDEX, Const.MAX_SIDE_LENGTH_PROGRESS);
